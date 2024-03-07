@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 08</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Operadores Relacionais:</h1>
+    <ul>
+        <li> > : Maior que...</li>
+        <li>
+            < : Menor que...</li>
+        <li> >= : Maior ou igual a...</li>
+        <li>
+            <= : Menor ou igual a...</li>
+        <li> == : Igual a...</li>
+        <li> != : É diferente de...</li>
+    </ul>
+
+    <h2>Exemplos: </h2>
+    <ol>
+        <li>Preço >= 200.00; //O preço é maior ou igual a 200.00?</li>
+        <li>Idade < 18; //A idade é menor que 18?</li>
+        <li>Curso == "Javascript"; // O curso é Javascript? </li>
+        <li>n1 != n2; // O n1 é diferente de n2? </li>
+    </ol>
+
+    <h2>Operador de Identidade:</h2>
+    <li>'===' -> Operador de igualdade restrita.</li>
+    <li>5 == 5; -> True (int - int) </li>
+    <li>5 == '5'; -> True (int - str) </li>
+    <li>5 <strong>===</strong> '5'; -> False (int - str) - Esse operador '===', além de comparar o tipo, ele também compara se o valor é igual, ou seja, o 5 é do mesmo tipo primitivo e tem o mesmo valor que o '5'?</li>
+    <li>5 <strong>===</strong> 5; -> True (int - int) - Agora sim, ambos tem o mesmo valor e são do mesmo tipo.</li>
+    <li>5 <strong>!==</strong> '5'; -> True (int - str) - São de tipos diferentes mas ambos tem o mesmo valor. </li>
+
+    <h2>Operadores Lógicos: </h2>
+    <li>! : Negação</li>
+    <li>&& : Conjução ou 'and'</li>
+    <li>|| : Disjunção ou 'or'</li>
+
+    <h3>Exemplos: </h3>
+    <p>Negação</p>
+    <li>!True = False</li>
+    <li>!False = True</li>
+
+    <p>Conjução ou 'and'</p>
+    <li>True && True = True</li>
+    <li>True && False = False</li>
+    <li>False && True = False</li>
+    <li>False && False = False</li>
+
+    <p>Disjunção ou 'or'</p>
+    <li>True || True = True</li>
+    <li>True || False = True</li>
+    <li>False || True = True</li>
+    <li>False || False = False</li>
+</body>
+
+</html>
