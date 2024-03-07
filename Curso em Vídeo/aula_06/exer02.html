@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06</title>
+    <!-- CSS 'incorpado' -->
+    <style>
+        /*Estilizando todo o body da página*/
+        body {
+            background-color: blue;
+            color: black;
+            font: normal 20pt Arial;
+        }
+
+        /*Estilizando todos os 'h1' da página*/
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Curso em Vídeo</p>
+
+    <!-- javascript -->
+    <script>
+
+        /* Tratamento de dados 
+         * crio uma variável  para armazenar o que o usuário digitar no campo
+         * exibido pelo comando prompt. 
+         */
+        var nome = window.prompt("Qual é o seu nome? ");
+        //por fim, eu mostro na tela o que o usuário digitou.
+        window.alert("É um prazer te conhecer, " + nome + "!");
+
+        /* utilizo a função 'parseInt' para converter os números digitados para int,
+         * e depois realizo a soma dos números digitados e armazeno o resultado em 'soma'.
+         * Se eu não realizar a conversão, o resultado será concatenado.
+         * Exemplo: o resultado de '5' + '5' será '55' porque eu não fiz a conversão,
+         * então o js faz a concatenação das duas strings.
+         * (Number + Number) -> Adição
+         * (Number + String) -> Concatenação
+         */
+
+        /* Funções de Conversão
+         * Number() -> o javascript de faz a conversão para int ou para float de acordo   * com a entrada de dados.
+         * parseInt() -> o javascript força a conversão para int.
+         * parseFloat() -> o javascript força a conversão para float.
+         */
+        var n1 = Number.parseInt(prompt("Digite um número: "));
+        var n2 = Number.parseInt(prompt("Digite outro número: "));
+        var soma = n1 + n2;
+
+        //exibindo o resultado da soma. 
+        window.alert(`O resultado da soma '${n1} + ${n2}' é: ${soma}`);
+        
+
+
+        /*  Formatando Strings
+         *  var string = 'Javascript';
+         *  console.log('Eu estou aprendendo ' + string); -> com concatenação
+         *  console.log(`Eu estou aprendendo ${string}`); -> com template string
+         *  
+         */
+
+    </script>
+</body>
+
+</html>

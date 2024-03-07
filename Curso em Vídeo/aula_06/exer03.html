@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        /* document.write() -> o write irá escrever no body do documento.
+         * <br/>  -> é tag <br/> é utilizada para pular para a próxima linha.
+         * Strings: 
+         * nome.length        -> retorna a quantidade de caracteres.
+         * nome.toUpperCase() -> retorna a string em letras maiúsculas.
+         * nome.toLowerCase() -> retorna a string em letras minúsculas.
+         */
+
+        var nome = window.prompt("Digite o seu nome: ");
+        document.write(`Olá, ${nome}! O seu nome tem ${nome.length} letras.  <br>`);
+        document.write(`O seu nome em letras maiúsculas: ${nome.toUpperCase()}`);
+        document.write(`O seu nome em letras minúsculas: ${nome.toLowerCase()}`);
+
+        var numero = Number(prompt("Digite um número: "));
+        window.alert(`Formatando o número ${numero} em duas casas flutuantes: ${numero.toFixed(2)}`);
+        window.alert(`Formatando o número ${numero} substituindo o '.' por uma ',' : ${numero.toFixed(2).replace('.', ',')}`);
+        window.alert(`Formatando o número ${numero} em Real ${(numero.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }))}`);
+    </script>
+</body>
+
+</html>
