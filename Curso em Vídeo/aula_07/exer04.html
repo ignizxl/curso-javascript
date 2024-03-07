@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 07</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Operadores Aritméticos:</h1>
+    <ul>
+        <li>+ = Adição</li>
+        <li>- = Subtração</li>
+        <li>* = Multiplicação</li>
+        <li>/ = Divisão</li>
+        <li>% = Resto da Divisão</li>
+        <li>** = Potenciação</li>
+    </ul>
+
+    <h2>Ordem de Precedência:</h2>
+    <ol>
+        <li>()</li>
+        <li>**</li>
+        <li>*, /, %</li>
+        <li>+, -</li>
+    </ol>
+
+    <h2>Auto-Atribuições:</h2>
+    <h3>var x = 5;</h3>
+    <li>x+= 3; -> É o mesmo que: x = x + 3; </li>
+    <li>x-= 4; -> É o mesmo que: x = x - 4; </li>
+    <li>x*= 5; -> É o mesmo que: x = x * 5; </li>
+    <li>x/= 6; -> É o mesmo que: x = x / 6; </li>
+    <li>x%= 2; -> É o mesmo que: x = x % 2; </li>
+    <li>x**= 3; -> É o mesmo que: x = x ** 3; </li>
+
+    <h2>Incremento e Decremento:</h2>
+    <h3>var x = 5;</h3>
+    <li>x++; -> É o mesmo que: x = x + 1; </li>
+    <li>x--; -> É o mesmo que: x = x - 1; </li>
+    <script>
+        n1 = window.Number(prompt("Digite um número: "));
+        n2 = window.Number(prompt("Digite outro número: "));
+        document.write(`<h2> -=-=-=  Exemplos =-=-=- </h2>`)
+        document.write(`-> Adição: ${n1} + ${n2} = ${n1 + n2} </br>`);
+        document.write(`-> Subtração: ${n1} - ${n2} = ${n1 - n2} </br>`);
+        document.write(`-> Multiplicação: ${n1} * ${n2} = ${n1 * n2} </br>`);
+        document.write(`-> Divisão: ${n1} / ${n2} = ${n1 / n2} </br>`);
+        document.write(`-> Resto da Divisão: ${n1} % ${n2} = ${n1 % n2} </br>`);
+        document.write(`-> Potenciação: ${n1} ** ${n2} = ${n1 ** n2} </br>`);
+
+    </script>
+</body>
+
+</html>
