@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 10</title>
+    <!-- Estilizando -->
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
+        div#resultado {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Somando valores</h1>
+    <!-- inputs -->
+    <input type="number" name="campo_1" id="campo_1">
+    +
+    <input type="number" name="campo_2" id="campo_2">
+    <input type="button" value="somar" id="Somar">
+    <div id="resultado"></div>
+    <script>
+        //Quando ocorrer um evento com o elemento que tiver o id 'Somar', ele irá chamar a função somar
+        window.document.getElementById('Somar').addEventListener('click', somar);
+        function somar() {
+            //capturando os valores dos inputs 
+            var str1 = window.document.getElementById('campo_1');
+            var str2 = window.document.getElementById('campo_2');
+            //extraindo e convertendo os valores dos inputs 
+            var n1 = Number(str1.value);
+            var n2 = Number(str2.value);
+            //realizando a soma dos valores dos inputs
+            var soma = n1 + n2;
+            //e por fim, exibindo o resultado final
+            window.document.getElementById('resultado').innerText = `A soma entre ${n1} e ${n2} é igual a ${soma}`;
+        }
+
+    </script>
+</body>
+
+</html>
