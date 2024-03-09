@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 10</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Eventos DOM:</h1>
+
+    <p>* onclick --> executa alguma ação ao clicar (ex: ao clicar em algum botão ou elemento)</p>
+
+    <p>* onload --> executa alguma ação ao carregar (ex: ao carregar a página por completo)
+    <p>
+    <p>* onchange --> executa alguma ação ao alterar (ex: escolhendo opção no select)</p>
+    <p>* onmouseover/ --> executa alguma ação quando o cursor do mouse passar por cima de algum elemento por exemplo</p>
+    <p>* onmouseout --> executa alguma ação quando o curso do mouse sair de cima de algum elemento por exemplo</p>
+    <p>* onfocus --> executa alguma ação quando você coloca o foco dentro de algum elemento de um formulário (ex: inserindo dados no campo)</p>
+    <p>* onmousedown --> executa alguma ação quando você clica e segura o botão do mouse</p>
+    <p>* onmouseup --> executa alguma ação quando você solta o botão do mouse</p>
+
+    <h2> Exemplos: </h2>
+
+    <!-- Eu posso adicionar os events no próprio html, como o exemplo na div abaixo, ou eu posso usar o JS.-->
+    <!--Events com html-->
+    <!-- <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">
+        Interaja
+    </div> -->
+
+    <!-- Events com JS -->
+    <div id="area">
+        Interaja
+    </div>
+
+    <script>
+        //crio o objeto 'event'
+        var event = window.document.getElementById('area');
+
+        // e utilizo o addEventListener('nome_do_evento', 'nome_da_função');
+        event.addEventListener('click', clicar);
+        event.addEventListener('mouseenter', entrou);
+        event.addEventListener('mouseout', saiu);
+        function clicar() {
+            //modificanto as propriedades do objeto event 
+            event.innerText = "Clicou!";
+            event.style.background = "red";
+        }
+        function entrou() {
+            event.innerText = "Entrou!";
+        }
+        function saiu() {
+            event.innerText = "Saiu!";
+            event.style.background = "green";
+        }
+
+    </script>
+</body>
+
+</html>
