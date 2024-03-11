@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14</title>
+    <link rel="stylesheet" href="/Curso em Vídeo/aula_14/css/style.css">
+</head>
+<!-- assim que a página for carregada, ela irá chamar a função carregar(). -->
+
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+
+        <div>
+            <label for="nascimento">Ano de nascimento:</label>
+            <input type="number" name="nascimento" id="nascimento">
+            <p> Sexo:
+                <input type="radio" name="sexo" id="masculino" checked>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="feminino">
+                <label for="feminino">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="descricao">
+            Preencha os dados acima para veer o resultado!
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Curso em Vídeo</p>
+    </footer>
+
+    <script src="/Curso em Vídeo/aula_14/src/script.js"></script>
+</body>
+
+</html>
