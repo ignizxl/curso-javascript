@@ -11,17 +11,17 @@ function carregar(){
     //as imagens irão ser modificadas dinâmicamente de acordo com a hora do sistema.
     if (hora_atual >= 0 && hora_atual < 12){
         //dia.
-        imagem.src = "/Curso em Vídeo/aula_13/imagens/manhã.jpg";
+        imagem.src = "/aula_13/imagens/manhã.jpg";
         document.body.style.background = "#e2cd9f";
     } 
     else if (hora_atual >= 12 && hora_atual <= 18){
         //tarde.
-        imagem.src = "/Curso em Vídeo/aula_13/imagens/tarde.jpg";
+        imagem.src = "/aula_13/imagens/tarde.jpg";
         document.body.style.background = "#b9846f";
     } 
     else {
         //noite.
-        imagem.src = "/Curso em Vídeo/aula_13/imagens/noite.jpg";
+        imagem.src = "/aula_13/imagens/noite.jpg";
         document.body.style.background = "#515154";
     }
 }

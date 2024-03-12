@@ -22,22 +22,22 @@ function verificar(){
             if (idade >= 0 && idade < 10){
                 //criança
                 genero = 'um Menino';
-                imagem.setAttribute('src', '/Curso em Vídeo/aula_14/imagens/bebe_M.jpg');
+                imagem.setAttribute('src', '/aula_14/imagens/bebe_M.jpg');
 
             } else if (idade < 21) {
                 //jovem
                 genero = 'um Jovem';
-                imagem.setAttribute('src', '/Curso em Vídeo/aula_14/imagens/jovem_M.jpg');
+                imagem.setAttribute('src', '/aula_14/imagens/jovem_M.jpg');
             
             } else if (idade < 50) {
                 //adulto 
                 genero = 'um Homem';
-                imagem.setAttribute('src', '/Curso em Vídeo/aula_14/imagens/adulto_M.jpg');
+                imagem.setAttribute('src', '/aula_14/imagens/adulto_M.jpg');
 
             } else {
                 //idoso
                 genero = 'um Senhor'; 
-                imagem.setAttribute('src', '/Curso em Vídeo/aula_14/imagens/idoso_M.jpg');
+                imagem.setAttribute('src', '/aula_14/imagens/idoso_M.jpg');
 
             }
 
@@ -46,22 +46,22 @@ function verificar(){
             if (idade >= 0 && idade < 10){
                 //criança
                 genero = 'uma Menina';
-                imagem.setAttribute('src', '/Curso em Vídeo/aula_14/imagens/bebe_F.jpg');
+                imagem.setAttribute('src', '/aula_14/imagens/bebe_F.jpg');
 
             } else if (idade < 21) {
                 //jovem
                 genero = 'uma Jovem';
-                imagem.setAttribute('src', '/Curso em Vídeo/aula_14/imagens/jovem_F.jpg');
+                imagem.setAttribute('src', '/aula_14/imagens/jovem_F.jpg');
             
             } else if (idade < 50) {
                 //adulto 
                 genero = 'uma Mulher';
-                imagem.setAttribute('src', '/Curso em Vídeo/aula_14/imagens/adulto_F.jpg');
+                imagem.setAttribute('src', '/aula_14/imagens/adulto_F.jpg');
 
             } else {
                 //idoso 
                 genero = 'uma Senhora';
-                imagem.setAttribute('src', '/Curso em Vídeo/aula_14/imagens/idoso_F.jpg');
+                imagem.setAttribute('src', '/aula_14/imagens/idoso_F.jpg');
 
             }
         }
