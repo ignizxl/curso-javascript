@@ -1,38 +1,23 @@
-// emoji da seta: &#10145;&#65039;
-// emoji da bandeira: &#127987;
 
-function contagem(inicio = 0, fim = 1, passo = 1){
-    var descricao = "";
-    
-    if (inicio > fim){
-        //contagem regressiva
-        for(let i = inicio; i >= fim; i -= passo){
-                descricao += ` &#10145;&#65039; ${i}`;
-        }  descricao += ` &#127987;`;
+function gerarTabuada(){
+    var numero = window.document.getElementById('numero').value;
+    var tabuada = window.document.getElementById('tabuadaSelect');
+    //verificando se o campo está vazio
+    if (numero.length == 0){
+        window.alert('[ERRO] Preencha o campo e tente novamente!');
     } else {
-        //contagem crescente
-        for(let i = inicio; i <= fim; i += passo){
-                descricao += ` &#10145;&#65039; ${i}`;
-        }  descricao += ` &#127987;`;
-    }
-    return descricao;
-}
-
-function contar(){
-    var inicio    = window.document.getElementById('inicio').value;
-    var fim       = window.document.getElementById('fim').value;
-    var passo     = window.document.getElementById('passo').value;
-    var descricao = window.document.getElementById('descricao');
-    
-    //verificando se os campos estão vazios 
-    if (inicio.length == 0 || fim.length == 0 || passo.length == 0){
-        window.alert('[ERRO] Preencha os campos e tente novamente!');
-    } else {
-        if (passo == 0){
-            window.alert("[ERRO] Passo inválido! Considerando passo como '1'.");
-            passo = 1;
+        numero = Number(numero);
+        c = 1;
+        //a tabuada sempre precisa iniciar como uma string vazia antes de mostrar os resultados, porque se eu não fizer isso, ela vai ficar acumulando todas as tabuadas dos números que eu digitar, e dessa forma toda vez que eu digitar um novo número uma nova tabuada será gerada. 
+        tabuada.innerHTML = '';
+        while (c <= 10){
+            //criando um elemento 'option'
+            let item = document.createElement('option');
+            //realizando o cálculo
+            item.text = `${numero} x ${c} = ${numero * c}`;
+            //adicionando o resultado na tabuada 
+            tabuada.appendChild(item);
+            c++;
         }
-        //chamando a função contagem()
-        descricao.innerHTML = `<p>${contagem(Number(inicio), Number(fim), Number(passo))}</p>`
-    }   
+    }
 }
