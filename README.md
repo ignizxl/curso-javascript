@@ -2,7 +2,8 @@
 Este é um repositório para armazenar aulas do curso "Javascript" do Curso em vídeo.
 
 Alguns conhecimentos que você pode adquirir com este repositório:
-OBS: Este curso é apenas um curso BÁSICO!
+
+### OBS: Este curso é apenas um curso BÁSICO!
 
 - Conceitos Iniciais
 - Variáveis e Tipos Primitivos
