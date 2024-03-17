@@ -48,3 +48,39 @@ function fatorial(n){
     return fact;
 }
 console.log(`O fatorial de ${6} é : ${fatorial(6)}`);
+
+
+//complementando 
+//arrow functions
+//    nomeDaFunção        parâmetros   <--estrutura da arrow function
+const somarDoisNumeros = (n1, n2) => {
+    //bloco
+    return n1 + n2;
+}
+
+//se escrever tudo na mesma linha não precisa escrever o return 
+//ex:
+
+const multiplicarDoisNumeros = (n1, n2) => n1 * n2;
+
+console.log(`Multiplicando 10 * 2 = ${multiplicarDoisNumeros(10,2)} e somando 2 + 2 = ${somarDoisNumeros(2,2)}`);
+
+console.log('=-==- Callback -==-=');
+/** callbacks
+ *  permite executar uma função depois de uma determinada ação
+ *  o que caracteriza uma callback é passar para uma função como argumento outra função
+ *  veja o exemplo:
+ */
+
+function exibirResultado(num){
+    console.log(`O resultado é ${num}.`);
+}
+// neste exemplo, a callback será a função exibirResultado
+function dividirDoisNumeros(n1, n2, callback){
+    let divisao = (n1 / n2).toFixed(2);
+    //chamando a função que foi passada como argumento
+    callback(divisao);
+}
+
+//chamando a função dividirDoisNumeros.
+dividirDoisNumeros(20, 5, exibirResultado);
